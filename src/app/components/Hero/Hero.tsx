@@ -51,7 +51,7 @@ export function HeroCTA() {
               Consultoria de Ponta em Segurança Ocupacional.
             </HeadingParagraph>
             <RootButtonCta>
-              <AnchorButtonCta href="https://api.whatsapp.com/send?phone=351933965256&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <AnchorButtonCta href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
                 <TextButtonCta>
                   Garanta a Segurança de sua Empresa
                 </TextButtonCta>
@@ -82,7 +82,7 @@ export function HeroCTA() {
       {/* BenefitsHeading */}
       <RootButtonWtsFloat>
         <ButtonWtsFloatAbsolute>
-          <ButtonWtsFloatAnchor href="https://api.whatsapp.com/send?phone=351933965256&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+          <ButtonWtsFloatAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <IconWtpFloat icon={WhatsappLogo} />
           </ButtonWtsFloatAnchor>
         </ButtonWtsFloatAbsolute>
