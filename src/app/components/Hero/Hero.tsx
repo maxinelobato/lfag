@@ -33,6 +33,17 @@ import {
   RootButtonWtsFloat,
 } from '../Buttons/ButtonWtsFloat'
 import { IconWtpFloat } from '../Icons/IconWtpFloat'
+import {
+  BenefitsSectionColor,
+  BenefitsSectionsRoot,
+} from '../Benefits/BenefitsSections'
+import {
+  BenefitsHeadingH1,
+  BenefitsHeadingParagraph,
+  BenefitsHeadingSpan,
+} from '../Benefits/BenefitsHeading'
+import { BenefitsStats } from '../Benefits/BenefitsStats'
+import { AboutHeading } from '../About/AboutHeading'
 
 export function HeroCTA() {
   return (
@@ -43,12 +54,12 @@ export function HeroCTA() {
           <HeroSectionProperty>
             <LogoLFAG />
             <HeadingH1>
-              Proteja sua empresa e evite multas e{' '}
+              Proteja sua empresa evitando multas e{' '}
               <HeadingSpan>processos trabalhistas</HeadingSpan>
             </HeadingH1>
             <HeadingParagraph>
               Transforme Sua Empresa em um Ambiente Seguro e Produtivo com Nossa
-              Consultoria de Ponta em Segurança Ocupacional.
+              Consultoria de Ponta em Segurança do Trabalho.
             </HeadingParagraph>
             <RootButtonCta>
               <AnchorButtonCta href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
@@ -78,8 +89,23 @@ export function HeroCTA() {
             <CardsCollection />
           </CardsSectionsContent>
         </CardsSectionsRoot>
+        {/* BenefitsHeading */}
+        <BenefitsSectionColor>
+          <BenefitsHeadingH1>
+            Como você irá se beneficiar ao{' '}
+            <BenefitsHeadingSpan>contratar a LFAG</BenefitsHeadingSpan>
+          </BenefitsHeadingH1>
+          <BenefitsHeadingParagraph>
+            São mais de 20 anos de Expertise em Segurança do Trabalho
+          </BenefitsHeadingParagraph>
+          <BenefitsSectionsRoot>
+            <BenefitsStats />
+          </BenefitsSectionsRoot>
+          {/* About Heading */}
+          <AboutHeading />
+        </BenefitsSectionColor>
       </CardsSectionColor>
-      {/* BenefitsHeading */}
+      {/* Button Flutuante Whatsapp */}
       <RootButtonWtsFloat>
         <ButtonWtsFloatAbsolute>
           <ButtonWtsFloatAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">

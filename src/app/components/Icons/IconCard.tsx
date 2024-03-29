@@ -5,5 +5,10 @@ export interface IconCardProps {
 }
 
 export function IconCard({ icon: Icon }: IconCardProps) {
-  return <Icon className="h-10 w-10 text-white" weight="fill" />
+  return (
+    <Icon
+      className="h-10 w-10 text-brandGreyBlue group-hover:text-white"
+      weight="fill"
+    />
+  )
 }

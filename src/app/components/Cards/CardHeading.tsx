@@ -20,7 +20,7 @@ type CardHeadingParagraphProps = ComponentProps<'p'>
 export function CardHeadingParagraph(props: CardHeadingParagraphProps) {
   return (
     <p
-      className="text-center text-sm font-medium text-white/85 sm:text-lg md:mt-2 md:block"
+      className="text-center text-sm font-medium text-brandGreyBlue/85 sm:text-lg md:mt-2 md:block"
       {...props}
     />
   )

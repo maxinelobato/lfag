@@ -29,5 +29,5 @@ export function BenefitsHeadingParagraph(props: BenefitsHeadingParagraphProps) {
 type BenefitsHeadingSpanProps = ComponentProps<'span'>
 
 export function BenefitsHeadingSpan(props: BenefitsHeadingSpanProps) {
-  return <span className="text-brandGreyBlue sm:block" {...props} />
+  return <span className="text-brandOrange sm:block" {...props} />
 }

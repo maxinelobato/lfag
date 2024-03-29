@@ -9,7 +9,7 @@ type HeadingParagraphProps = ComponentProps<'p'>
 export function HeadingParagraph(props: HeadingParagraphProps) {
   return (
     <p
-      className="text-center text-sm font-semibold text-white/85 sm:text-left sm:text-lg md:mt-2 md:block"
+      className="text-center text-sm font-semibold text-brandGreyBlue/85 sm:text-left sm:text-lg md:mt-2 md:block"
       {...props}
     />
   )
