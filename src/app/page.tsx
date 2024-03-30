@@ -1,5 +1,11 @@
-import { HeroCTA } from './components/Hero/Hero'
+import { Card } from './components/Cards'
+import { Hero } from './components/Hero'
 
 export default function Home() {
-  return <HeroCTA />
+  return (
+    <>
+      <Hero />
+      <Card />
+    </>
+  )
 }

@@ -41,7 +41,7 @@ type TextButtonCtaProps = ComponentProps<'div'>
 export function TextButtonCta(props: TextButtonCtaProps) {
   return (
     <div
-      className="mr-3 text-sm font-semibold uppercase text-white group-hover:text-zinc-800 sm:text-lg"
+      className="mr-3 text-center text-sm font-semibold uppercase text-white group-hover:text-zinc-800 sm:text-left sm:text-lg"
       {...props}
     />
   )

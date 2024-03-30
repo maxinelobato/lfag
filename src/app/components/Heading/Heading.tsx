@@ -4,17 +4,6 @@ export interface HeadingProps {
   className: string
 }
 
-type HeadingParagraphProps = ComponentProps<'p'>
-
-export function HeadingParagraph(props: HeadingParagraphProps) {
-  return (
-    <p
-      className="text-center text-sm font-semibold text-brandGreyBlue/85 sm:text-left sm:text-lg md:mt-2 md:block"
-      {...props}
-    />
-  )
-}
-
 type HeadingH1Props = ComponentProps<'h1'>
 
 export function HeadingH1(props: HeadingH1Props) {
@@ -30,4 +19,15 @@ type HeadingSpanProps = ComponentProps<'span'>
 
 export function HeadingSpan(props: HeadingSpanProps) {
   return <span className="text-brandGreyBlue sm:block" {...props} />
+}
+
+type HeadingParagraphProps = ComponentProps<'p'>
+
+export function HeadingParagraph(props: HeadingParagraphProps) {
+  return (
+    <p
+      className="text-center text-sm font-semibold text-brandGreyBlue/85 sm:text-left sm:text-lg md:mt-2 md:block"
+      {...props}
+    />
+  )
 }

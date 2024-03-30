@@ -1,22 +1,22 @@
 'use client'
 
 import {
-  Certificate,
+  WhatsappLogo,
   File,
+  Certificate,
   Warning,
   NotePencil,
   Stethoscope,
-  WhatsappLogo,
 } from '@phosphor-icons/react'
 import { IconCard } from '../Icons/IconCard'
-import { CardBg, CardGrid, CardH1, CardP } from './Card'
+import { IconWtp } from '../Icons/IconWtp'
 import {
   CardButtonAnchor,
   CardButtonFlex,
   CardButtonRoot,
   CardButtonText,
 } from './CardButton'
-import { IconWtp } from '../Icons/IconWtp'
+import { CardBg, CardGrid, CardH1, CardP } from './CardSections'
 
 export function CardsCollection() {
   const titleCards = {
