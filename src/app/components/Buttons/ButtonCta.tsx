@@ -4,9 +4,9 @@ export interface ButtonCta {
   className: string
 }
 
-type RootButtonCtaProps = ComponentProps<'div'>
+type ButtonPropertyProps = ComponentProps<'div'>
 
-export function RootButtonCta(props: RootButtonCtaProps) {
+export function ButtonProperty(props: ButtonPropertyProps) {
   return (
     <div
       className="my-8 flex w-full justify-center sm:justify-start"
@@ -15,9 +15,9 @@ export function RootButtonCta(props: RootButtonCtaProps) {
   )
 }
 
-type AnchorButtonCtaProps = ComponentProps<'a'>
+type ButtonAnchorProps = ComponentProps<'a'>
 
-export function AnchorButtonCta(props: AnchorButtonCtaProps) {
+export function ButtonAnchor(props: ButtonAnchorProps) {
   return (
     <a
       target="_blank"
@@ -28,17 +28,17 @@ export function AnchorButtonCta(props: AnchorButtonCtaProps) {
   )
 }
 
-type FlexItensButtonCtaProps = ComponentProps<'div'>
+type ButtonFlexProps = ComponentProps<'div'>
 
-export function FlexItensButtonCta(props: FlexItensButtonCtaProps) {
+export function ButtonFlex(props: ButtonFlexProps) {
   return (
     <div className="flex items-center group-hover:text-zinc-800" {...props} />
   )
 }
 
-type TextButtonCtaProps = ComponentProps<'div'>
+type ButtonTextProps = ComponentProps<'div'>
 
-export function TextButtonCta(props: TextButtonCtaProps) {
+export function ButtonText(props: ButtonTextProps) {
   return (
     <div
       className="mr-3 text-center text-sm font-semibold uppercase text-white group-hover:text-zinc-800 sm:text-left sm:text-lg"

@@ -2,10 +2,10 @@
 
 import { WhatsappLogo } from '@phosphor-icons/react'
 import {
-  AnchorButtonCta,
-  FlexItensButtonCta,
-  RootButtonCta,
-  TextButtonCta,
+  ButtonAnchor,
+  ButtonFlex,
+  ButtonProperty,
+  ButtonText,
 } from '../Buttons/ButtonCta'
 import { HeadingH1, HeadingParagraph, HeadingSpan } from '../Heading/Heading'
 import { IconWtp } from '../Icons/IconWtp'
@@ -15,12 +15,6 @@ import {
   HeroSectionRoot,
 } from './HeroSections'
 import { LogoLFAG } from '../Logo/LogoLFAG'
-import {
-  ButtonWtsFloatAbsolute,
-  ButtonWtsFloatAnchor,
-  RootButtonWtsFloat,
-} from '../Buttons/ButtonWtsFloat'
-import { IconWtpFloat } from '../Icons/IconWtpFloat'
 import { StarRating } from '../Icons/StarRating'
 
 export function Hero() {
@@ -41,29 +35,19 @@ export function Hero() {
               com Nossas Soluções em SST.
             </HeadingParagraph>
             {/* Button CTA */}
-            <RootButtonCta>
-              <AnchorButtonCta href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-                <TextButtonCta>
-                  Garanta a Segurança de sua Empresa
-                </TextButtonCta>
-                <FlexItensButtonCta>
+            <ButtonProperty>
+              <ButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+                <ButtonText>Garanta a Segurança de sua Empresa</ButtonText>
+                <ButtonFlex>
                   <IconWtp icon={WhatsappLogo} />
-                </FlexItensButtonCta>
-              </AnchorButtonCta>
-            </RootButtonCta>
+                </ButtonFlex>
+              </ButtonAnchor>
+            </ButtonProperty>
             {/* Atendimento de Excelência */}
             <StarRating />
           </HeroSectionProperty>
         </HeroSectionBgGradient>
       </HeroSectionRoot>
-      {/* Button Flutuante Whatsapp */}
-      <RootButtonWtsFloat>
-        <ButtonWtsFloatAbsolute>
-          <ButtonWtsFloatAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <IconWtpFloat icon={WhatsappLogo} />
-          </ButtonWtsFloatAnchor>
-        </ButtonWtsFloatAbsolute>
-      </RootButtonWtsFloat>
     </>
   )
 }

@@ -4,9 +4,9 @@ export interface AboutProps {
   className: string
 }
 
-type AboutRootProps = ComponentProps<'section'>
+type AboutSectionProps = ComponentProps<'section'>
 
-export function AboutRoot(props: AboutRootProps) {
+export function AboutSection(props: AboutSectionProps) {
   return (
     <>
       <section
@@ -35,6 +35,7 @@ export function AboutH1(props: AboutH1Props) {
   return (
     <>
       <h1
+        style={{ textShadow: '0px 0px 4px #000000' }}
         className="font-sans text-2xl font-extrabold uppercase text-white md:text-3xl"
         {...props}
       />
@@ -48,8 +49,8 @@ export function AboutSpan(props: AboutSpanProps) {
   return (
     <>
       <span className="flex items-center">
-        <span className="h-px flex-1 bg-brandOrange"></span>
-        <span className="pl-4 font-bold text-brandOrange" {...props} />
+        <span className="h-px flex-1 bg-brandGreyBlue"></span>
+        <span className="pl-4 font-bold text-brandGreyBlue" {...props} />
       </span>
     </>
   )
@@ -60,7 +61,10 @@ type AboutParagraphProps = ComponentProps<'p'>
 export function AboutParagraph(props: AboutParagraphProps) {
   return (
     <>
-      <p className="font-semibold text-white md:mt-4 md:block" {...props} />
+      <p
+        className="font-semibold text-brandGreyBlue md:mt-4 md:block"
+        {...props}
+      />
     </>
   )
 }

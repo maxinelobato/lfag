@@ -42,22 +42,9 @@ type CardBgProps = ComponentProps<'div'>
 export function CardBg(props: CardBgProps) {
   return (
     <div
-      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-lg shadow-white hover:border-2 hover:border-none hover:border-white hover:bg-brandGreyBlue hover:shadow-brandGreyBlue"
+      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-sm hover:scale-105 hover:border-2 hover:border-white hover:bg-zinc-950/30"
       {...props}
     />
-  )
-}
-
-type CardsSectionColorProps = ComponentProps<'div'>
-
-export function CardsSectionColor(props: CardsSectionColorProps) {
-  return (
-    <>
-      <div
-        className="min-h-full bg-gradient-to-br from-brandOrange to-white bg-scroll"
-        {...props}
-      />
-    </>
   )
 }
 

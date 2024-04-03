@@ -1,12 +1,12 @@
 import { ComponentProps } from 'react'
 
-export interface ButtonWtsFloat {
+export interface ButtonFloat {
   className: string
 }
 
-type RootButtonWtsFloatProps = ComponentProps<'div'>
+type ButtonFloatPropertyProps = ComponentProps<'div'>
 
-export function RootButtonWtsFloat(props: RootButtonWtsFloatProps) {
+export function ButtonFloatProperty(props: ButtonFloatPropertyProps) {
   return (
     <div
       className="group fixed bottom-4 right-4 z-[100] flex h-24 w-24 items-end justify-end p-2 hover:-translate-x-0 hover:scale-110 hover:transition-all hover:duration-300"
@@ -15,9 +15,9 @@ export function RootButtonWtsFloat(props: RootButtonWtsFloatProps) {
   )
 }
 
-type ButtonWtsFloatAbsoluteProps = ComponentProps<'div'>
+type ButtonFloatAbsoluteProps = ComponentProps<'div'>
 
-export function ButtonWtsFloatAbsolute(props: ButtonWtsFloatAbsoluteProps) {
+export function ButtonFloatAbsolute(props: ButtonFloatAbsoluteProps) {
   return (
     <div
       className="absolute z-50 flex items-center justify-center rounded-full bg-green-600 p-4 text-white shadow-xl hover:bg-brandWts hover:transition-all focus:outline-none group-hover:text-zinc-800"
@@ -26,9 +26,9 @@ export function ButtonWtsFloatAbsolute(props: ButtonWtsFloatAbsoluteProps) {
   )
 }
 
-type ButtonWtsFloatAnchorProps = ComponentProps<'a'>
+type ButtonFloatAnchorProps = ComponentProps<'a'>
 
-export function ButtonWtsFloatAnchor(props: ButtonWtsFloatAnchorProps) {
+export function ButtonFloatAnchor(props: ButtonFloatAnchorProps) {
   return (
     <a
       className="decoration-transparent group-hover:text-zinc-800"

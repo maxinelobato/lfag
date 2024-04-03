@@ -2,10 +2,10 @@
 
 import { WhatsappLogo } from '@phosphor-icons/react'
 import {
-  AnchorButtonCta,
-  FlexItensButtonCta,
-  RootButtonCta,
-  TextButtonCta,
+  ButtonAnchor,
+  ButtonFlex,
+  ButtonProperty,
+  ButtonText,
 } from '../Buttons/ButtonCta'
 import { IconWtp } from '../Icons/IconWtp'
 import Image from 'next/image'
@@ -15,14 +15,14 @@ import {
   AboutH1,
   AboutParagraph,
   AboutProperty,
-  AboutRoot,
+  AboutSection,
   AboutSpan,
-} from './AboutSections'
+} from './AboutComponents'
 
 export function About() {
   return (
     <>
-      <AboutRoot>
+      <AboutSection>
         <AboutProperty>
           <AboutH1>Conheça à LFAG da Especialista Aurely Feitoza</AboutH1>
           <AboutSpan>CREA 135798D</AboutSpan>
@@ -42,26 +42,23 @@ export function About() {
             os trabalhadores.
           </AboutParagraph>
           <AboutDivButton>
-            <RootButtonCta>
-              <AnchorButtonCta href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-                <TextButtonCta>
-                  Garanta a Segurança de sua Empresa
-                </TextButtonCta>
-                <FlexItensButtonCta>
+            <ButtonProperty>
+              <ButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+                <ButtonText>Garanta a Segurança de sua Empresa</ButtonText>
+                <ButtonFlex>
                   <IconWtp icon={WhatsappLogo} />
-                </FlexItensButtonCta>
-              </AnchorButtonCta>
-            </RootButtonCta>
+                </ButtonFlex>
+              </ButtonAnchor>
+            </ButtonProperty>
           </AboutDivButton>
         </AboutProperty>
-
         <Image
           alt="Imagem"
           src={ImageAurely}
           loading="lazy"
           className="h-fit w-full object-cover"
         />
-      </AboutRoot>
+      </AboutSection>
     </>
   )
 }
