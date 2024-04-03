@@ -13,7 +13,7 @@ import {
   HeroSectionBgGradient,
   HeroSectionProperty,
   HeroSectionRoot,
-} from './HeroSections'
+} from './HeroComponents'
 import { LogoLFAG } from '../Logo/LogoLFAG'
 import { StarRating } from '../Icons/StarRating'
 

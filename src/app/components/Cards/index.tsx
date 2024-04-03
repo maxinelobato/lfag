@@ -1,29 +1,27 @@
-import { Benefits } from '../Benefits'
 import {
-  CardHeadingH1,
-  CardHeadingParagraph,
-  CardHeadingSpan,
-} from './CardHeading'
-import { CardsSectionsContent, CardsSectionsRoot } from './CardSections'
+  CardH1,
+  CardParagraph,
+  CardSpan,
+  CardProperty,
+  CardsSection,
+} from './CardComponents'
 import { CardsCollection } from './CardsCollection'
 
 export function Card() {
   return (
     <>
-      <CardHeadingH1>
+      <CardH1>
         Confira as Especialidades que{' '}
-        <CardHeadingSpan>Atuamos para Sua Empresa</CardHeadingSpan>
-      </CardHeadingH1>
-      <CardHeadingParagraph>
+        <CardSpan>Atuamos para Sua Empresa</CardSpan>
+      </CardH1>
+      <CardParagraph>
         Consulte nossos especialistas para uma avaliação
-      </CardHeadingParagraph>
-      <CardsSectionsRoot>
-        <CardsSectionsContent>
+      </CardParagraph>
+      <CardsSection>
+        <CardProperty>
           <CardsCollection />
-        </CardsSectionsContent>
-      </CardsSectionsRoot>
-      {/* BenefitsHeading */}
-      <Benefits />
+        </CardProperty>
+      </CardsSection>
     </>
   )
 }

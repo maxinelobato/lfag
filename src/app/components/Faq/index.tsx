@@ -9,7 +9,7 @@ import {
   FaqSummary,
   FaqSummaryH1,
   FaqSummarySpanIcon,
-} from './FaqSections'
+} from './FaqComponents'
 
 export function Faq() {
   const faqFeatures = [

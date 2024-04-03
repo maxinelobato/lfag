@@ -11,12 +11,15 @@ import {
 import { IconCard } from '../Icons/IconCard'
 import { IconWtp } from '../Icons/IconWtp'
 import {
+  CardGridBg,
+  CardGrid,
+  CardGridH1,
+  CardGridParagraph,
   CardButtonAnchor,
   CardButtonFlex,
-  CardButtonRoot,
+  CardButtonProperty,
   CardButtonText,
-} from './CardButton'
-import { CardBg, CardGrid, CardH1, CardP } from './CardSections'
+} from './CardComponents'
 
 export function CardsCollection() {
   const titleCards = {
@@ -37,71 +40,71 @@ export function CardsCollection() {
 
   return (
     <CardGrid>
-      <CardBg>
+      <CardGridBg>
         <IconCard icon={File} />
-        <CardH1>{titleCards.title1}</CardH1>
-        <CardP>{paragraphCards.paragraphCards1}</CardP>
-        <CardButtonRoot>
+        <CardGridH1>{titleCards.title1}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards1}</CardGridParagraph>
+        <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
               <CardButtonText>Saiba mais</CardButtonText>
               <IconWtp icon={WhatsappLogo} />
             </CardButtonFlex>
           </CardButtonAnchor>
-        </CardButtonRoot>
-      </CardBg>
-      <CardBg>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
         <IconCard icon={Certificate} />
-        <CardH1>{titleCards.title2}</CardH1>
-        <CardP>{paragraphCards.paragraphCards2}</CardP>
-        <CardButtonRoot>
+        <CardGridH1>{titleCards.title2}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards2}</CardGridParagraph>
+        <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
               <CardButtonText>Saiba mais</CardButtonText>
               <IconWtp icon={WhatsappLogo} />
             </CardButtonFlex>
           </CardButtonAnchor>
-        </CardButtonRoot>
-      </CardBg>
-      <CardBg>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
         <IconCard icon={Warning} />
-        <CardH1>{titleCards.title3}</CardH1>
-        <CardP>{paragraphCards.paragraphCards3}</CardP>
-        <CardButtonRoot>
+        <CardGridH1>{titleCards.title3}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards3}</CardGridParagraph>
+        <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
               <CardButtonText>Saiba mais</CardButtonText>
               <IconWtp icon={WhatsappLogo} />
             </CardButtonFlex>
           </CardButtonAnchor>
-        </CardButtonRoot>
-      </CardBg>
-      <CardBg>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
         <IconCard icon={NotePencil} />
-        <CardH1>{titleCards.title4}</CardH1>
-        <CardP>{paragraphCards.paragraphCards4}</CardP>
-        <CardButtonRoot>
+        <CardGridH1>{titleCards.title4}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards4}</CardGridParagraph>
+        <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
               <CardButtonText>Saiba mais</CardButtonText>
               <IconWtp icon={WhatsappLogo} />
             </CardButtonFlex>
           </CardButtonAnchor>
-        </CardButtonRoot>
-      </CardBg>
-      <CardBg>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
         <IconCard icon={Stethoscope} />
-        <CardH1>{titleCards.title5}</CardH1>
-        <CardP>{paragraphCards.paragraphCards5}</CardP>
-        <CardButtonRoot>
+        <CardGridH1>{titleCards.title5}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards5}</CardGridParagraph>
+        <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
               <CardButtonText>Saiba mais</CardButtonText>
               <IconWtp icon={WhatsappLogo} />
             </CardButtonFlex>
           </CardButtonAnchor>
-        </CardButtonRoot>
-      </CardBg>
+        </CardButtonProperty>
+      </CardGridBg>
     </CardGrid>
   )
 }

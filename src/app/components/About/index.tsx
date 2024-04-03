@@ -55,7 +55,8 @@ export function About() {
         <Image
           alt="Imagem"
           src={ImageAurely}
-          loading="lazy"
+          loading="eager"
+          quality={100}
           className="h-fit w-full object-cover"
         />
       </AboutSection>

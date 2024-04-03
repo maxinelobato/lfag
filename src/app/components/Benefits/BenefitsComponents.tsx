@@ -48,6 +48,19 @@ export function BenefitsParagraph(props: BenefitsParagraphProps) {
   )
 }
 
+// type BenefitsSpanH1Props = ComponentProps<'span'>
+
+// export function BenefitsSpanH1(props: BenefitsSpanH1Props) {
+//   return (
+//     <>
+//       <span className="flex items-center">
+//         <span className="h-px flex-1 bg-brandGreyBlue"></span>
+//         <span className="pl-4 font-bold text-brandGreyBlue" {...props} />
+//       </span>
+//     </>
+//   )
+// }
+
 type BenefitsSpanProps = ComponentProps<'span'>
 
 export function BenefitsSpan(props: BenefitsSpanProps) {

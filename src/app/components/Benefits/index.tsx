@@ -13,7 +13,7 @@ import {
 } from './BenefitsComponents'
 
 export function Benefits() {
-  const features = [
+  const featuresBenefits = [
     {
       icon: (
         <svg
@@ -97,7 +97,7 @@ export function Benefits() {
       <BenefitsSection>
         <BenefitsGridSection>
           <BenefitsGridUl>
-            {features.map((item, idx) => (
+            {featuresBenefits.map((item, idx) => (
               <BenefitsGridLi key={idx}>
                 <BenefitsGridLiIcon>{item.icon}</BenefitsGridLiIcon>
                 <BenefitsGridLiDiv>
