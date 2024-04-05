@@ -35,7 +35,7 @@ export function AboutH1(props: AboutH1Props) {
   return (
     <>
       <h1
-        style={{ textShadow: '0px 0px 4px #000000' }}
+        style={{ textShadow: '0px 0px 2px #000000' }}
         className="font-sans text-2xl font-extrabold uppercase text-white md:text-3xl"
         {...props}
       />

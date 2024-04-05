@@ -11,7 +11,7 @@ import { Navigation, Autoplay } from 'swiper/modules'
 import Image from 'next/image'
 import ImageAurely from '../../../../public/img/aurely-img.png'
 import ImageGoogle from '../../../../public/img/google.png'
-import { SocialProveH1, SocialProveSpan } from './SocialProveSections'
+import { SocialProveH1, SocialProveSpan } from './SocialProveComponents'
 
 export function SocialProve() {
   return (

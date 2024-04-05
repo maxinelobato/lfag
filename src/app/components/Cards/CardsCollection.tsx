@@ -7,6 +7,8 @@ import {
   Warning,
   NotePencil,
   Stethoscope,
+  WarningDiamond,
+  PlusCircle,
 } from '@phosphor-icons/react'
 import { IconCard } from '../Icons/IconCard'
 import { IconWtp } from '../Icons/IconWtp'
@@ -28,14 +30,21 @@ export function CardsCollection() {
     title3: 'PGR',
     title4: 'DIR',
     title5: 'PCMSO',
+    title6: 'PPP',
+    title7: 'SST',
+    title8: 'FAE',
   }
 
   const paragraphCards = {
     paragraphCards1: 'Envio dos Eventos de SST para o E-Social',
-    paragraphCards2: 'Laudo Técnico de Condições Ambientais do Trabalho',
+    paragraphCards2: 'Elaborar e Auditar a Conformidade do LTCAT',
     paragraphCards3: 'Programa de Gerenciamento de Riscos',
     paragraphCards4: 'Declaração de Inexistência de Riscos',
     paragraphCards5: 'Programa de Controle Médico de Saúde Ocupacional',
+    paragraphCards6: 'Emitir e Auditar a Conformidade do PPP',
+    paragraphCards7:
+      'Transmitir os Eventos do SST ao eSocial e Auditar a conformidade do envio dos eventos de SST ao eSocial',
+    paragraphCards8: 'Auditar a Conformidade do Recolhimento do FAE',
   }
 
   return (
@@ -96,6 +105,45 @@ export function CardsCollection() {
         <IconCard icon={Stethoscope} />
         <CardGridH1>{titleCards.title5}</CardGridH1>
         <CardGridParagraph>{paragraphCards.paragraphCards5}</CardGridParagraph>
+        <CardButtonProperty>
+          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+            <CardButtonFlex>
+              <CardButtonText>Saiba mais</CardButtonText>
+              <IconWtp icon={WhatsappLogo} />
+            </CardButtonFlex>
+          </CardButtonAnchor>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
+        <IconCard icon={WarningDiamond} />
+        <CardGridH1>{titleCards.title6}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards6}</CardGridParagraph>
+        <CardButtonProperty>
+          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+            <CardButtonFlex>
+              <CardButtonText>Saiba mais</CardButtonText>
+              <IconWtp icon={WhatsappLogo} />
+            </CardButtonFlex>
+          </CardButtonAnchor>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
+        <IconCard icon={PlusCircle} />
+        <CardGridH1>{titleCards.title7}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards7}</CardGridParagraph>
+        <CardButtonProperty>
+          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+            <CardButtonFlex>
+              <CardButtonText>Saiba mais</CardButtonText>
+              <IconWtp icon={WhatsappLogo} />
+            </CardButtonFlex>
+          </CardButtonAnchor>
+        </CardButtonProperty>
+      </CardGridBg>
+      <CardGridBg>
+        <IconCard icon={File} />
+        <CardGridH1>{titleCards.title8}</CardGridH1>
+        <CardGridParagraph>{paragraphCards.paragraphCards8}</CardGridParagraph>
         <CardButtonProperty>
           <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
             <CardButtonFlex>
