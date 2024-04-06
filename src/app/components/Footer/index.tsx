@@ -29,23 +29,23 @@ export function Footer() {
               <div className="flex">
                 <p className="mr-1 text-brandOrange">Whastsapp:</p>
                 <a
-                  href="tel:+559898909-6968"
+                  href="tel:+5594992659199"
                   aria-label="Whatsapp"
                   title="Whatsapp"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  +55 98 98909-6968
+                  +55 94 99265-9199
                 </a>
               </div>
               <div className="flex">
                 <p className="mr-1 text-brandOrange">Email:</p>
                 <a
-                  href="mailto:lfag@lfag.com.br"
+                  href="mailto:lfagsst@gmail.com"
                   aria-label="Email"
                   title="Email"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  lfag@lfag.com.br
+                  lfagsst@gmail.com
                 </a>
               </div>
               <div className="flex">
