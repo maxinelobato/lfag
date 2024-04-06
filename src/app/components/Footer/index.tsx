@@ -1,7 +1,6 @@
 'use client'
 
 import { InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
-import { IconWtp } from '../Icons/IconWtp'
 import { LogoLFagAzul } from '../Logo/LogoLFagAzul'
 
 export function Footer() {
@@ -68,16 +67,18 @@ export function Footer() {
               </span>
               <div className="mt-1 flex items-center space-x-3">
                 <a
-                  href="/"
+                  href="https://www.linkedin.com/in/aurely-feitoza-a4815525/"
+                  target="_blank"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  <IconWtp icon={LinkedinLogo} />
+                  <LinkedinLogo weight="fill" size={32} />
                 </a>
                 <a
-                  href="/"
+                  href="https://www.instagram.com/aurely_gloria/"
+                  target="_blank"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  <IconWtp icon={InstagramLogo} />
+                  <InstagramLogo weight="fill" size={32} />
                 </a>
               </div>
               {/* <p className="mt-4 text-sm text-white">Lorem</p> */}

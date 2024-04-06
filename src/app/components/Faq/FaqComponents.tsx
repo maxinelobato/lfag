@@ -55,7 +55,7 @@ type FaqDetailsProps = ComponentProps<'details'>
 export function FaqDetails(props: FaqDetailsProps) {
   return (
     <details
-      className="group rounded-lg border-2 border-white/30 bg-white/20 p-4 shadow-sm [&_summary::-webkit-details-marker]:hidden"
+      className="group rounded-lg border-2 border-white/30 bg-white/20 p-4 shadow-sm backdrop-blur-lg [&_summary::-webkit-details-marker]:hidden"
       open={false}
       {...props}
     />

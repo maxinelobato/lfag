@@ -16,6 +16,11 @@ import {
 } from './HeroComponents'
 import { LogoLFAG } from '../Logo/LogoLFAG'
 import { StarRating } from '../Icons/StarRating'
+import { Card } from '../Cards'
+import { Benefits } from '../Benefits'
+import { About } from '../About'
+import { SocialProve } from '../SocialProve'
+import { Faq } from '../Faq'
 
 export function Hero() {
   return (
@@ -46,6 +51,11 @@ export function Hero() {
             {/* Atendimento de Excelência */}
             <StarRating />
           </HeroSectionProperty>
+          <Card />
+          <Benefits />
+          <About />
+          <SocialProve />
+          <Faq />
         </HeroSectionBgGradient>
       </HeroSectionRoot>
     </>

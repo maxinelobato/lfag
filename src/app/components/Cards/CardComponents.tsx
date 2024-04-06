@@ -82,7 +82,7 @@ type CardGridBgProps = ComponentProps<'div'>
 export function CardGridBg(props: CardGridBgProps) {
   return (
     <div
-      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-sm hover:scale-105 hover:border-2 hover:border-white hover:bg-zinc-950/30"
+      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-sm backdrop-blur-lg hover:scale-105 hover:border-2 hover:border-white hover:bg-zinc-950/30"
       {...props}
     />
   )
