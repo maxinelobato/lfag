@@ -11,9 +11,6 @@ const config: Config = {
         brandOrange200: '#FAB975',
         brandWts: '#00E676',
       },
-      animation: {
-        'spin-slow': 'spin 5s linear infinite',
-      },
     },
   },
   plugins: [],

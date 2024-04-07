@@ -105,7 +105,7 @@ export function BenefitsGridLiIcon(props: BenefitsGridLiIconProps) {
   return (
     <>
       <div
-        className="flex h-12 w-12 flex-none items-center justify-center rounded-lg border-2 border-white/30 bg-white/20 shadow-sm"
+        className="flex h-12 w-12 flex-none items-center justify-center rounded-lg border-2 border-white/30 bg-white/20 shadow-sm shadow-black/30"
         {...props}
       />
     </>

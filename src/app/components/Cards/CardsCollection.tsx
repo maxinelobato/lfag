@@ -22,6 +22,7 @@ import {
   CardButtonProperty,
   CardButtonText,
 } from './CardComponents'
+import { RevealWrapper } from 'next-reveal'
 
 export function CardsCollection() {
   const titleCards = {
@@ -49,110 +50,222 @@ export function CardsCollection() {
 
   return (
     <CardGrid>
-      <CardGridBg>
-        <IconCard icon={File} />
-        <CardGridH1>{titleCards.title1}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards1}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={Certificate} />
-        <CardGridH1>{titleCards.title2}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards2}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={Warning} />
-        <CardGridH1>{titleCards.title3}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards3}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={NotePencil} />
-        <CardGridH1>{titleCards.title4}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards4}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={Stethoscope} />
-        <CardGridH1>{titleCards.title5}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards5}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={WarningDiamond} />
-        <CardGridH1>{titleCards.title6}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards6}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={PlusCircle} />
-        <CardGridH1>{titleCards.title7}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards7}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
-      <CardGridBg>
-        <IconCard icon={File} />
-        <CardGridH1>{titleCards.title8}</CardGridH1>
-        <CardGridParagraph>{paragraphCards.paragraphCards8}</CardGridParagraph>
-        <CardButtonProperty>
-          <CardButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-            <CardButtonFlex>
-              <CardButtonText>Saiba mais</CardButtonText>
-              <IconWtp icon={WhatsappLogo} />
-            </CardButtonFlex>
-          </CardButtonAnchor>
-        </CardButtonProperty>
-      </CardGridBg>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={200}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={File} />
+          <CardGridH1>{titleCards.title1}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards1}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={250}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={Certificate} />
+          <CardGridH1>{titleCards.title2}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards2}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={300}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={Warning} />
+          <CardGridH1>{titleCards.title3}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards3}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={350}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={NotePencil} />
+          <CardGridH1>{titleCards.title4}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards4}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={400}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={Stethoscope} />
+          <CardGridH1>{titleCards.title5}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards5}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={450}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={WarningDiamond} />
+          <CardGridH1>{titleCards.title6}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards6}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={500}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={PlusCircle} />
+          <CardGridH1>{titleCards.title7}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards7}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
+      <RevealWrapper
+        rotate={{ x: 0, y: 0, z: 0 }}
+        origin="left"
+        delay={500}
+        duration={1000}
+        distance="500px"
+        reset={true}
+        desktop={true}
+        mobile={true}
+        viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+      >
+        <CardGridBg>
+          <IconCard icon={File} />
+          <CardGridH1>{titleCards.title8}</CardGridH1>
+          <CardGridParagraph>
+            {paragraphCards.paragraphCards8}
+          </CardGridParagraph>
+          <CardButtonProperty>
+            <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <CardButtonFlex>
+                <CardButtonText>Saiba mais</CardButtonText>
+                <IconWtp icon={WhatsappLogo} />
+              </CardButtonFlex>
+            </CardButtonAnchor>
+          </CardButtonProperty>
+        </CardGridBg>
+      </RevealWrapper>
     </CardGrid>
   )
 }

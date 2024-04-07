@@ -12,14 +12,17 @@ import Image from 'next/image'
 import ImageAurely from '../../../../public/img/aurely-img.png'
 import ImageGoogle from '../../../../public/img/google.png'
 import { SocialProveH1, SocialProveSpan } from './SocialProveComponents'
+import { RevealWrapper } from 'next-reveal'
 
 export function SocialProve() {
   return (
     <>
-      <SocialProveH1>
-        O que os clientes falam {''}
-        <SocialProveSpan>sobre a LFAG</SocialProveSpan>
-      </SocialProveH1>
+      <RevealWrapper delay={450} reset={true}>
+        <SocialProveH1>
+          O que os clientes falam {''}
+          <SocialProveSpan>sobre a LFAG</SocialProveSpan>
+        </SocialProveH1>
+      </RevealWrapper>
       <div className="mx-auto max-w-3xl px-4 py-4 sm:px-6">
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4 xl:justify-center">
           <Image

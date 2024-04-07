@@ -1,3 +1,6 @@
+'use client'
+
+import { RevealWrapper } from 'next-reveal'
 import {
   BenefitsGridLi,
   BenefitsGridLiDiv,
@@ -87,26 +90,42 @@ export function Benefits() {
   ]
   return (
     <>
-      <BenefitsH1>
-        Como você irá se beneficiar ao{' '}
-        <BenefitsSpan>contratar a LFAG</BenefitsSpan>
-      </BenefitsH1>
-      <BenefitsParagraph>
-        São mais de 20 anos de Expertise em Segurança do Trabalho
-      </BenefitsParagraph>
+      <RevealWrapper delay={300} reset={true}>
+        <BenefitsH1>
+          Como você irá se beneficiar ao{' '}
+          <BenefitsSpan>contratar a LFAG</BenefitsSpan>
+        </BenefitsH1>
+        <BenefitsParagraph>
+          São mais de 20 anos de Expertise em Segurança do Trabalho
+        </BenefitsParagraph>
+      </RevealWrapper>
       <BenefitsSection>
         <BenefitsGridSection>
-          <BenefitsGridUl>
-            {featuresBenefits.map((item, idx) => (
-              <BenefitsGridLi key={idx}>
-                <BenefitsGridLiIcon>{item.icon}</BenefitsGridLiIcon>
-                <BenefitsGridLiDiv>
-                  <BenefitsGridLiH1>{item.title}</BenefitsGridLiH1>
-                  <BenefitsGridLiParagraph>{item.desc}</BenefitsGridLiParagraph>
-                </BenefitsGridLiDiv>
-              </BenefitsGridLi>
-            ))}
-          </BenefitsGridUl>
+          <RevealWrapper
+            rotate={{ x: 0, y: 0, z: 0 }}
+            origin="left"
+            delay={200}
+            duration={1000}
+            distance="500px"
+            reset={true}
+            desktop={true}
+            mobile={true}
+            viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+          >
+            <BenefitsGridUl>
+              {featuresBenefits.map((item, idx) => (
+                <BenefitsGridLi key={idx}>
+                  <BenefitsGridLiIcon>{item.icon}</BenefitsGridLiIcon>
+                  <BenefitsGridLiDiv>
+                    <BenefitsGridLiH1>{item.title}</BenefitsGridLiH1>
+                    <BenefitsGridLiParagraph>
+                      {item.desc}
+                    </BenefitsGridLiParagraph>
+                  </BenefitsGridLiDiv>
+                </BenefitsGridLi>
+              ))}
+            </BenefitsGridUl>
+          </RevealWrapper>
         </BenefitsGridSection>
       </BenefitsSection>
     </>

@@ -22,7 +22,7 @@ export function ButtonAnchor(props: ButtonAnchorProps) {
     <a
       target="_blank"
       aria-label="Clique no botão"
-      className="focus:shadow-outline group inline-flex h-16 w-full items-center justify-center rounded-full bg-green-600 px-6 font-medium tracking-wide text-white shadow-md delay-0 duration-150 ease-in-out hover:scale-110 hover:bg-brandWts hover:transition-all focus:outline-none sm:h-14 md:w-auto"
+      className="focus:shadow-outline group inline-flex h-16 w-full items-center justify-center rounded-full bg-green-600 px-6 font-medium tracking-wide text-white shadow-sm shadow-black/30 delay-0 duration-150 ease-in-out hover:scale-110 hover:bg-brandWts hover:transition-all focus:outline-none sm:h-14 md:w-auto"
       {...props}
     />
   )

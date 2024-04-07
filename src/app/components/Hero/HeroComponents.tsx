@@ -20,7 +20,7 @@ type HeroSectionBgGradientProps = ComponentProps<'div'>
 export function HeroSectionBgGradient(props: HeroSectionBgGradientProps) {
   return (
     <div
-      className="bg-gradient-to-r from-brandOrange from-40% to-transparent to-90% p-8 md:p-12 lg:px-16 lg:py-12"
+      className="bg-gradient-to-r from-brandOrange/90 from-40% to-brandOrange200/45 to-90% p-8 md:p-12 lg:px-16 lg:py-12"
       {...props}
     />
   )

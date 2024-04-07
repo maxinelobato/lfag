@@ -2,6 +2,7 @@
 
 import { InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 import { LogoLFagAzul } from '../Logo/LogoLFagAzul'
+import { FooterNotice } from './FooterNotice'
 
 export function Footer() {
   return (
@@ -12,7 +13,7 @@ export function Footer() {
             <div className="sm:col-span-2">
               <div className="inline-flex items-center">
                 <LogoLFagAzul />
-                <span className="ml-2 text-sm font-bold tracking-wide text-white">
+                <span className="ml-2 text-lg font-bold tracking-wide text-white">
                   Segurança do Trabalho e Ergonomia
                 </span>
               </div>
@@ -28,7 +29,7 @@ export function Footer() {
               <div className="flex">
                 <p className="mr-1 text-brandOrange">Whastsapp:</p>
                 <a
-                  href="tel:+5594992659199"
+                  href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20"
                   aria-label="Whatsapp"
                   title="Whatsapp"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
@@ -49,16 +50,17 @@ export function Footer() {
               </div>
               <div className="flex">
                 <p className="mr-1 text-brandOrange">Endereço:</p>
-                <a
+                {/* <a
                   href="https://www.google.com/maps"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Endereço"
                   title="Endereço"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
-                >
-                  Parauapebas/PA
-                </a>
+                > */}
+                <div className="text-white">Parauapebas/PA</div>
+
+                {/* </a> */}
               </div>
             </div>
             <div>
@@ -71,14 +73,14 @@ export function Footer() {
                   target="_blank"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  <LinkedinLogo weight="fill" size={32} />
+                  <LinkedinLogo weight="fill" size={48} />
                 </a>
                 <a
                   href="https://www.instagram.com/aurely_gloria/"
                   target="_blank"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
-                  <InstagramLogo weight="fill" size={32} />
+                  <InstagramLogo weight="fill" size={48} />
                 </a>
               </div>
               {/* <p className="mt-4 text-sm text-white">Lorem</p> */}
@@ -86,8 +88,8 @@ export function Footer() {
           </div>
           <div className="flex flex-col-reverse justify-between border-t border-brandOrange200 pb-10 pt-5 lg:flex-row">
             <p className="text-center text-sm text-white/80 sm:text-left">
-              © Todos os Direitos Reservados 2024 - LFAG - Segurança do
-              Trabalho e Engonomia.
+              © Todos os Direitos Reservados 2024. LFAG - Segurança do Trabalho
+              e Engonomia.
             </p>
             {/* <ul className="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-x-5 sm:space-y-0 lg:mb-0">
               <li>
@@ -118,6 +120,7 @@ export function Footer() {
           </div>
         </div>
       </footer>
+      <FooterNotice />
     </>
   )
 }

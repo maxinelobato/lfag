@@ -1,3 +1,6 @@
+'use client'
+
+import { RevealWrapper } from 'next-reveal'
 import {
   FaqDetails,
   FaqDetailsParagraph,
@@ -107,10 +110,12 @@ export function Faq() {
 
   return (
     <>
-      <FaqH1>
-        Perguntas <FaqSpan>frequentes</FaqSpan>
-      </FaqH1>
-      <FaqParagraph>Dúvidas sobre os serviços</FaqParagraph>
+      <RevealWrapper delay={500} reset={true}>
+        <FaqH1>
+          Perguntas <FaqSpan>frequentes</FaqSpan>
+        </FaqH1>
+        <FaqParagraph>Dúvidas sobre os serviços</FaqParagraph>
+      </RevealWrapper>
       <FaqSectionsRoot>
         <FaqSpace>
           {faqFeatures.map((item, idx) => (

@@ -55,7 +55,7 @@ type FaqDetailsProps = ComponentProps<'details'>
 export function FaqDetails(props: FaqDetailsProps) {
   return (
     <details
-      className="group rounded-lg border-2 border-white/30 bg-white/20 p-4 shadow-sm backdrop-blur-lg [&_summary::-webkit-details-marker]:hidden"
+      className="group rounded-lg border-2 border-white/30 bg-gradient-to-r from-white/20 to-brandOrange/30 p-4 shadow-sm shadow-black/30 backdrop-blur-lg [&_summary::-webkit-details-marker]:hidden"
       open={false}
       {...props}
     />
@@ -84,7 +84,7 @@ type FaqSummarySpanIconProps = ComponentProps<'span'>
 export function FaqSummarySpanIcon(props: FaqSummarySpanIconProps) {
   return (
     <span
-      className="shrink-0 rounded-full border-2 border-brandGreyBlue/30 bg-white/80 p-1.5 text-brandGreyBlue shadow-2xl sm:p-3"
+      className="shrink-0 rounded-full bg-white/30 p-1.5 text-brandGreyBlue shadow-sm shadow-black/30 sm:p-3"
       {...props}
     />
   )

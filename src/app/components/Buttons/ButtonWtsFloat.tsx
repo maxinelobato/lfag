@@ -20,7 +20,7 @@ type ButtonFloatAbsoluteProps = ComponentProps<'div'>
 export function ButtonFloatAbsolute(props: ButtonFloatAbsoluteProps) {
   return (
     <div
-      className="absolute z-50 flex items-center justify-center rounded-full bg-green-600 p-4 text-white shadow-xl hover:bg-brandWts hover:transition-all focus:outline-none group-hover:text-zinc-800"
+      className="absolute z-50 flex items-center justify-center rounded-full bg-green-600 p-4 text-white shadow-sm shadow-black/30 hover:bg-brandWts hover:transition-all focus:outline-none group-hover:text-zinc-800"
       {...props}
     />
   )
