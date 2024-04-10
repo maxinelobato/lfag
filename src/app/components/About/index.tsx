@@ -61,6 +61,7 @@ export function About() {
           alt="Imagem"
           src={ImageAurely}
           loading="eager"
+          sizes='sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"'
           className="object-auto h-fit w-full"
         />
       </AboutSection>

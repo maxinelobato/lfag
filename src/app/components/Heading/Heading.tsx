@@ -10,7 +10,7 @@ export function HeadingH1(props: HeadingH1Props) {
   return (
     <h1
       style={{ textShadow: '0px 0px 2px #000000' }}
-      className="mb-6 max-w-5xl break-words text-center font-sans text-4xl font-extrabold uppercase text-white sm:text-left sm:text-5xl md:mx-auto"
+      className="mb-6 max-w-5xl text-center font-sans text-4xl font-extrabold uppercase text-white sm:text-left sm:text-5xl md:mx-auto"
       {...props}
     />
   )

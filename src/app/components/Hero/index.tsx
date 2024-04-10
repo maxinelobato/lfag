@@ -21,11 +21,9 @@ import { RevealWrapper } from 'next-reveal'
 export function Hero() {
   return (
     <>
-      {/* Hero CTA */}
       <HeroSectionRoot>
         <HeroSectionBgGradient>
           <HeroSectionProperty>
-            {/* Logo LFAG */}
             <LogoLFAG />
             <RevealWrapper delay={100} reset={true}>
               <HeadingH1>
@@ -37,7 +35,6 @@ export function Hero() {
                 com Nossas Soluções em SST.
               </HeadingParagraph>
             </RevealWrapper>
-            {/* Button CTA */}
             <ButtonProperty>
               <ButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
                 <ButtonText>Garanta a Segurança de sua Empresa</ButtonText>
@@ -46,7 +43,6 @@ export function Hero() {
                 </ButtonFlex>
               </ButtonAnchor>
             </ButtonProperty>
-            {/* Atendimento de Excelência */}
             <StarRating />
           </HeroSectionProperty>
         </HeroSectionBgGradient>

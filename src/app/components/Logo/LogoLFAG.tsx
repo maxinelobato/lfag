@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Logo from '../../../../public/img/lfag2.png'
+import Logo from '../../../../public/img/lfag1.png'
 
 export function LogoLFAG() {
   return (
