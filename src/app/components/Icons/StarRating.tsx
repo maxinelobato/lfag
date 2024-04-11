@@ -41,7 +41,7 @@ export function StarRating() {
             filter: 'drop-shadow(1px 1px 1px #292929)',
           }}
         />
-        <span className="mt-1 text-base font-medium text-white">
+        <span className="z-40 mt-1 text-base font-medium text-white">
           Atendimento de Excelência
         </span>
       </div>
