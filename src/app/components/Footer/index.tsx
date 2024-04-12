@@ -26,8 +26,7 @@ export function Footer() {
                 <p className="mr-1 text-brandOrange">Whastsapp:</p>
                 <a
                   href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20"
-                  aria-label="Whatsapp"
-                  title="Whatsapp"
+                  aria-label="Fale conosco no whatsapp"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
                 >
                   +55 94 99265-9199
@@ -37,8 +36,7 @@ export function Footer() {
                 <p className="mr-1 text-brandOrange">Email:</p>
                 <a
                   href="mailto:lfagsst@gmail.com"
-                  aria-label="Email"
-                  title="Email"
+                  aria-label="Fale conosco no Email"
                   className="text-white transition-colors duration-300 hover:text-brandOrange200"
                 >
                   lfagsst@gmail.com
@@ -57,6 +55,7 @@ export function Footer() {
                 <a
                   href="https://www.linkedin.com/in/aurely-feitoza-a4815525/"
                   target="_blank"
+                  aria-label="Me siga no LinkedIn"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
                   <LinkedinLogo weight="fill" size={48} />
@@ -64,6 +63,7 @@ export function Footer() {
                 <a
                   href="https://www.instagram.com/aurely_gloria/"
                   target="_blank"
+                  aria-label="Me siga no Instagram"
                   className="text-brandOrange transition-colors duration-300 hover:text-brandOrange200"
                 >
                   <InstagramLogo weight="fill" size={48} />
