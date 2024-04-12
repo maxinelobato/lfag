@@ -2,10 +2,9 @@
 
 import { WhatsappLogo } from '@phosphor-icons/react'
 import {
-  ButtonAnchor,
-  ButtonFlex,
-  ButtonProperty,
-  ButtonText,
+  ButtonHome,
+  ButtonHomeFlex,
+  ButtonHomeText,
 } from '../Buttons/ButtonCta'
 import { HeadingH1, HeadingParagraph, HeadingSpan } from '../Heading/Heading'
 import { IconWtp } from '../Icons/IconWtp'
@@ -32,14 +31,12 @@ export function Hero() {
               com Nossas Soluções em SST.
             </HeadingParagraph>
           </RevealWrapper>
-          <ButtonProperty>
-            <ButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-              <ButtonText>Garanta a Segurança de sua Empresa</ButtonText>
-              <ButtonFlex>
-                <IconWtp icon={WhatsappLogo} />
-              </ButtonFlex>
-            </ButtonAnchor>
-          </ButtonProperty>
+          <ButtonHome href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+            <ButtonHomeText>Garanta a Segurança de sua Empresa</ButtonHomeText>
+            <ButtonHomeFlex>
+              <IconWtp icon={WhatsappLogo} />
+            </ButtonHomeFlex>
+          </ButtonHome>
           <StarRating />
         </HeroSectionProperty>
       </HeroSectionRoot>

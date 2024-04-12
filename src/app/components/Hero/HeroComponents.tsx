@@ -10,17 +10,6 @@ export function HeroSectionRoot(props: HeroSectionRootProps) {
   return <section className="relative overflow-hidden" {...props} />
 }
 
-// type HeroSectionBgGradientProps = ComponentProps<'div'>
-
-// export function HeroSectionBgGradient(props: HeroSectionBgGradientProps) {
-//   return (
-//     <div
-//       className="bg-gradient-to-r from-brandOrange/90 from-40% to-brandOrange200/45 to-90% p-6 md:p-12 lg:px-16 lg:py-12"
-//       {...props}
-//     />
-//   )
-// }
-
 type HeroSectionPropertyProps = ComponentProps<'div'>
 
 export function HeroSectionProperty(props: HeroSectionPropertyProps) {

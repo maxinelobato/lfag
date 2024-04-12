@@ -2,13 +2,11 @@
 
 import { WhatsappLogo } from '@phosphor-icons/react'
 import {
-  ButtonAnchor,
-  ButtonFlex,
-  ButtonProperty,
-  ButtonText,
+  ButtonHome,
+  ButtonHomeFlex,
+  ButtonHomeText,
 } from '../Buttons/ButtonCta'
 import { IconWtp } from '../Icons/IconWtp'
-import Image from 'next/image'
 import ImageAurely from '../../../../public/img/aurely-img.png'
 import {
   AboutDivButton,
@@ -19,6 +17,7 @@ import {
   AboutSpan,
 } from './AboutComponents'
 import { RevealWrapper } from 'next-reveal'
+import Image from 'next/image'
 
 export function About() {
   return (
@@ -47,21 +46,23 @@ export function About() {
             </AboutParagraph>
           </RevealWrapper>
           <AboutDivButton>
-            <ButtonProperty>
-              <ButtonAnchor href="https://api.whatsapp.com/send?phone=9889096968&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20a%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-                <ButtonText>Garanta a Segurança de sua Empresa</ButtonText>
-                <ButtonFlex>
-                  <IconWtp icon={WhatsappLogo} />
-                </ButtonFlex>
-              </ButtonAnchor>
-            </ButtonProperty>
+            <ButtonHome href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+              <ButtonHomeText>
+                Garanta a Segurança de sua Empresa
+              </ButtonHomeText>
+              <ButtonHomeFlex>
+                <IconWtp icon={WhatsappLogo} />
+              </ButtonHomeFlex>
+            </ButtonHome>
           </AboutDivButton>
         </AboutProperty>
         <Image
           alt="Imagem"
           src={ImageAurely}
           loading="eager"
-          sizes='sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"'
+          sizes='"(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"'
           className="object-auto h-fit w-full"
         />
       </AboutSection>
