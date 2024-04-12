@@ -4,6 +4,12 @@ export interface SocialProveProps {
   className: string
 }
 
+type SocialProveSpaceProps = ComponentProps<'section'>
+
+export function SocialProveSpace(props: SocialProveSpaceProps) {
+  return <section className="py-10" {...props} />
+}
+
 type SocialProveH1Props = ComponentProps<'h1'>
 
 export function SocialProveH1(props: SocialProveH1Props) {

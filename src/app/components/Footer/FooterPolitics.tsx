@@ -1,7 +1,7 @@
 export function FooterPolitics() {
   return (
     <>
-      <div className="bg-brandGreyBlue900/90">
+      <footer className="bg-brandGreyBlue900/90">
         <div className="mx-auto max-w-5xl p-4 py-10">
           <p className="text-center text-sm text-white">
             Este site não faz parte do Google nem do Facebook ou do Facebook
@@ -14,7 +14,7 @@ export function FooterPolitics() {
             segurança do trabalho.
           </p>
         </div>
-      </div>
+      </footer>
     </>
   )
 }

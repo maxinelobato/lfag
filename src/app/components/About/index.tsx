@@ -24,11 +24,11 @@ export function About() {
     <>
       <AboutSection>
         <AboutProperty>
-          <RevealWrapper delay={400} reset={true}>
+          <RevealWrapper reset={true}>
             <AboutH1>Conheça à LFAG da Especialista Aurely Feitoza</AboutH1>
             <AboutSpan>CREA 135798D</AboutSpan>
           </RevealWrapper>
-          <RevealWrapper delay={450} reset={true}>
+          <RevealWrapper reset={true}>
             <AboutParagraph>
               Especialista em Segurança do Trabalho, com mais de 23 anos de
               experiência, vários cursos de especialização e capacitação

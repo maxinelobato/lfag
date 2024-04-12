@@ -53,8 +53,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={200}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -80,8 +78,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={250}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -107,8 +103,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={300}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -134,8 +128,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={350}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -161,8 +153,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={400}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -188,8 +178,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={450}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -215,8 +203,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={500}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}
@@ -242,8 +228,6 @@ export function CardsCollection() {
       <RevealWrapper
         rotate={{ x: 0, y: 0, z: 0 }}
         origin="left"
-        delay={500}
-        duration={1000}
         distance="500px"
         reset={true}
         desktop={true}

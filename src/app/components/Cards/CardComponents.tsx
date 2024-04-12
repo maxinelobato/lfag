@@ -4,6 +4,12 @@ export interface CardProps {
   className: string
 }
 
+type CardSpaceProps = ComponentProps<'section'>
+
+export function CardSpace(props: CardSpaceProps) {
+  return <section className="py-10" {...props} />
+}
+
 type CardH1Props = ComponentProps<'h1'>
 
 export function CardH1(props: CardH1Props) {
@@ -82,7 +88,7 @@ type CardGridBgProps = ComponentProps<'div'>
 export function CardGridBg(props: CardGridBgProps) {
   return (
     <div
-      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-sm shadow-black/30 backdrop-blur-lg hover:scale-105 hover:border-none hover:bg-zinc-950/30"
+      className="group rounded-lg border-2 border-white/30 bg-white/20 p-8 shadow-sm shadow-black/30 backdrop-blur-lg hover:border-2 hover:border-white hover:bg-zinc-950/30"
       {...props}
     />
   )

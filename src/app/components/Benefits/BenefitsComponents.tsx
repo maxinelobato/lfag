@@ -9,7 +9,7 @@ type BenefitsBgProps = ComponentProps<'div'>
 export function BenefitsBg(props: BenefitsBgProps) {
   return (
     <>
-      <div className="bg-brandGreyBlue bg-scroll" {...props} />
+      <div className="bg-brandGreyBlue" {...props} />
     </>
   )
 }
@@ -23,6 +23,12 @@ export function BenefitsSection(props: BenefitsSectionProps) {
       {...props}
     />
   )
+}
+
+type BenefitsSpaceProps = ComponentProps<'section'>
+
+export function BenefitsSpace(props: BenefitsSpaceProps) {
+  return <section className="py-10" {...props} />
 }
 
 type BenefitsH1Props = ComponentProps<'h1'>

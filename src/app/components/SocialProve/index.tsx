@@ -1,42 +1,48 @@
-'use client'
+// 'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import './swiper.css'
+// import { Swiper, SwiperSlide } from 'swiper/react'
+// import './swiper.css'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
+// import 'swiper/css'
+// import 'swiper/css/navigation'
 
-import { Navigation, Autoplay } from 'swiper/modules'
+// import { Navigation, Autoplay } from 'swiper/modules'
 
 import Image from 'next/image'
-import ImageAurely from '../../../../public/img/aurely-img.png'
+// import ImageAurely from '../../../../public/img/aurely-img.png'
+import Client1 from '../../../../public/img/client1.jpg'
 import ImageGoogle from '../../../../public/img/google.png'
-import { SocialProveH1, SocialProveSpan } from './SocialProveComponents'
+import {
+  SocialProveH1,
+  SocialProveSpace,
+  SocialProveSpan,
+} from './SocialProveComponents'
 import { RevealWrapper } from 'next-reveal'
 
 export function SocialProve() {
   return (
     <>
-      <RevealWrapper delay={450} reset={true}>
-        <SocialProveH1>
-          O que os clientes falam {''}
-          <SocialProveSpan>sobre a LFAG</SocialProveSpan>
-        </SocialProveH1>
-      </RevealWrapper>
-      <div className="mx-auto max-w-3xl px-4 py-4 sm:px-6">
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4 xl:justify-center">
-          <Image
-            src={ImageGoogle}
-            alt="Imagem"
-            width={300}
-            height={300}
-            rel="preload"
-            className="h-28 w-28 drop-shadow-lg"
-          />
+      <SocialProveSpace>
+        <RevealWrapper reset={true}>
+          <SocialProveH1>
+            O que os clientes falam {''}
+            <SocialProveSpan>sobre a LFAG</SocialProveSpan>
+          </SocialProveH1>
+        </RevealWrapper>
+        <div className="mx-auto max-w-3xl px-4 py-4 sm:px-6">
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-4 xl:justify-center">
+            <Image
+              src={ImageGoogle}
+              alt="Imagem"
+              width={300}
+              height={300}
+              rel="preload"
+              className="h-28 w-28 drop-shadow-lg"
+            />
+          </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-lg px-4 pt-8 sm:px-6">
-        <Swiper
+        <div className="mx-auto max-w-lg px-4 pt-8 sm:px-6">
+          {/* <Swiper
           navigation={true}
           autoplay={{
             delay: 2200,
@@ -46,15 +52,34 @@ export function SocialProve() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <blockquote className="items-center justify-center sm:p-8 lg:p-12">
+            <div className="group relative block overflow-hidden rounded-lg bg-black">
               <Image
-                src={ImageAurely}
-                alt="Imagem 1"
-                rel="preload"
-                className="cursor-pointer rounded-2xl"
+                alt="Img"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                src={Client1}
+                className="absolute inset-0 h-auto w-full cursor-pointer rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-50"
               />
-            </blockquote>
+
+              <div className="relative p-4 sm:p-6 lg:p-8">
+                <div className="mt-32 sm:mt-48 lg:mt-64">
+                  <div className="translate-y-8 transform rounded-lg bg-white/10 p-2 opacity-0 backdrop-blur-sm transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-sm font-medium uppercase tracking-widest text-brandOrange ">
+                      VForte
+                    </p>
+                    <p className="text-xl font-bold text-white sm:text-2xl">
+                      Maria das Graças
+                    </p>
+                    <p className="text-sm text-white">
+                      Amando a consultoria da Aurely! Uma profissional muito
+                      competente e sabe exatamente o que está fazendo pelos 20
+                      anos de experiência. Acabei aconomizando muito pelos
+                      próximos 10 anos de empresas. Minha enorme Gratidão por
+                      toda sua entrega.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
@@ -104,8 +129,32 @@ export function SocialProve() {
               />
             </blockquote>
           </SwiperSlide>
-        </Swiper>
-      </div>
+        </Swiper> */}
+          <div className="block overflow-hidden rounded-lg">
+            <Image
+              alt="Img"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              src={Client1}
+              className="h-full w-full object-cover sm:h-80 lg:h-auto"
+            />
+
+            <div className="rounded-b-sm border-2 border-white/30 bg-white/20 p-4 shadow-sm shadow-black/30 backdrop-blur-lg">
+              <p className="text-xs font-bold uppercase tracking-widest text-brandGreyBlue900">
+                VForte | Engenharia e Controle Ambiental
+              </p>
+              <p className="pt-2 text-xl font-bold text-brandGreyBlue sm:text-2xl">
+                Viviane Oliveira
+              </p>
+              <p className="pt-1 text-sm text-brandGreyBlue900">
+                Amando a consultoria da Aurely! Uma profissional muito
+                competente e sabe exatamente o que está fazendo pelos 20 anos de
+                experiência. Acabei aconomizando muito pelos próximos 10 anos de
+                empresas. Minha enorme Gratidão por toda sua entrega.
+              </p>
+            </div>
+          </div>
+        </div>
+      </SocialProveSpace>
     </>
   )
 }

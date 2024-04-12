@@ -21,7 +21,7 @@ export function Hero() {
         <HeroSectionBgImg />
         <HeroSectionProperty>
           <LogoLFAG />
-          <RevealWrapper delay={100} reset={true}>
+          <RevealWrapper reset={true}>
             <HeadingH1>
               Proteja sua empresa evitando multas e{' '}
               <HeadingSpan>processos trabalhistas</HeadingSpan>

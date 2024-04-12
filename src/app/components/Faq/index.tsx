@@ -110,7 +110,7 @@ export function Faq() {
 
   return (
     <>
-      <RevealWrapper delay={500} reset={true}>
+      <RevealWrapper reset={true}>
         <FaqH1>
           Perguntas <FaqSpan>frequentes</FaqSpan>
         </FaqH1>
