@@ -1,4 +1,4 @@
-export function FooterNotice() {
+export function FooterPolitics() {
   return (
     <>
       <div className="bg-brandGreyBlue900/90">

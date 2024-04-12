@@ -2,7 +2,7 @@
 
 import { InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 import { LogoLFagAzul } from '../Logo/LogoLFagAzul'
-import { FooterNotice } from './FooterNotice'
+import { FooterPolitics } from './FooterPolitics'
 
 export function Footer() {
   return (
@@ -17,10 +17,6 @@ export function Footer() {
                   Segurança do Trabalho e Ergonomia
                 </span>
               </div>
-              {/* <div className="mt-6 lg:max-w-sm">
-                <p className="text-sm text-white">Lorem</p>
-                <p className="mt-4 text-sm text-white">Lorem</p>
-              </div> */}
             </div>
             <div className="space-y-2 text-sm">
               <p className="text-base font-bold tracking-wide text-white">
@@ -50,17 +46,7 @@ export function Footer() {
               </div>
               <div className="flex">
                 <p className="mr-1 text-brandOrange">Endereço:</p>
-                {/* <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Endereço"
-                  title="Endereço"
-                  className="text-white transition-colors duration-300 hover:text-brandOrange200"
-                > */}
                 <div className="text-white">Parauapebas/PA</div>
-
-                {/* </a> */}
               </div>
             </div>
             <div>
@@ -83,7 +69,6 @@ export function Footer() {
                   <InstagramLogo weight="fill" size={48} />
                 </a>
               </div>
-              {/* <p className="mt-4 text-sm text-white">Lorem</p> */}
             </div>
           </div>
           <div className="flex flex-col-reverse justify-between border-t border-brandOrange200 pb-10 pt-5 lg:flex-row">
@@ -91,36 +76,10 @@ export function Footer() {
               © Todos os Direitos Reservados 2024. LFAG - Segurança do Trabalho
               e Engonomia.
             </p>
-            {/* <ul className="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-x-5 sm:space-y-0 lg:mb-0">
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300"
-                >
-                  F.A.Q
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-deep-purple-accent-400 text-sm text-gray-600 transition-colors duration-300"
-                >
-                  Terms &amp; Conditions
-                </a>
-              </li>
-            </ul> */}
           </div>
         </div>
       </footer>
-      <FooterNotice />
+      <FooterPolitics />
     </>
   )
 }
