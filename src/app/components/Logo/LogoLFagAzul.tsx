@@ -6,9 +6,10 @@ export function LogoLFagAzul() {
     <>
       <Image
         className="drop-shadow-md"
-        width={100}
-        height={100}
+        width={80}
+        height={80}
         loading="lazy"
+        rel="preload"
         src={Logo}
         alt="Logo"
       />

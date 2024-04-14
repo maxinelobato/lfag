@@ -11,6 +11,7 @@ export function LogoLFAG() {
               width={100}
               height={100}
               loading="lazy"
+              rel="preload"
               src={Logo}
               alt="Logo"
             />

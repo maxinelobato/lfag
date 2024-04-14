@@ -10,7 +10,7 @@ export function AboutSection(props: AboutSectionProps) {
   return (
     <>
       <section
-        className="mx-auto max-w-screen-xl overflow-hidden bg-scroll sm:grid sm:max-w-6xl sm:grid-cols-2 sm:items-center"
+        className="mx-auto max-w-screen-xl overflow-hidden sm:grid sm:max-w-6xl sm:grid-cols-2 sm:items-center"
         {...props}
       />
     </>
@@ -43,6 +43,12 @@ export function AboutH1(props: AboutH1Props) {
   )
 }
 
+type AboutSpanH1Props = ComponentProps<'span'>
+
+export function AboutSpanH1(props: AboutSpanH1Props) {
+  return <span className="text-brandGreyBlue sm:block" {...props} />
+}
+
 type AboutSpanProps = ComponentProps<'span'>
 
 export function AboutSpan(props: AboutSpanProps) {
@@ -62,7 +68,7 @@ export function AboutParagraph(props: AboutParagraphProps) {
   return (
     <>
       <p
-        className="font-semibold text-brandGreyBlue md:mt-4 md:block"
+        className="mt-6 font-semibold text-brandGreyBlue sm:mt-4 md:block"
         {...props}
       />
     </>

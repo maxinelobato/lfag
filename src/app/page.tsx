@@ -2,6 +2,7 @@
 
 import { About } from './components/About'
 import { Benefits } from './components/Benefits'
+import { BusinessWorked } from './components/BusinessWorked'
 import { ButtonFloatWttp } from './components/Buttons'
 import { Card } from './components/Cards'
 import { Faq } from './components/Faq'
@@ -19,6 +20,7 @@ export default function Home() {
         <Benefits />
         <About />
         <SocialProve />
+        <BusinessWorked />
         <Faq />
       </BgGradientColor>
       <Footer />

@@ -95,7 +95,7 @@ export function Benefits() {
         <RevealWrapper reset={true}>
           <BenefitsH1>
             Como você irá se beneficiar ao{' '}
-            <BenefitsSpan>contratar a LFAG</BenefitsSpan>
+            <BenefitsSpan>contratar à LFAG</BenefitsSpan>
           </BenefitsH1>
           <BenefitsParagraph>
             São mais de 20 anos de Expertise em Segurança do Trabalho

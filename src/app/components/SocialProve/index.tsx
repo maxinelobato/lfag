@@ -8,16 +8,23 @@
 
 // import { Navigation, Autoplay } from 'swiper/modules'
 
-import Image from 'next/image'
 // import ImageAurely from '../../../../public/img/aurely-img.png'
-import Client1 from '../../../../public/img/client1.jpg'
-import ImageGoogle from '../../../../public/img/google.png'
 import {
   SocialProveH1,
   SocialProveSpace,
   SocialProveSpan,
 } from './SocialProveComponents'
 import { RevealWrapper } from 'next-reveal'
+import { ImgGoogle } from './ImgGoogle'
+import {
+  SocialCardImgClient,
+  SocialCardImgGoogle,
+  SocialCardParagraphContent,
+  SocialCardParagraphSubtitle,
+  SocialCardParagraphTitle,
+  SocialCardProperty,
+} from './SocialCardComponents'
+import { ImgClient } from './ImgClient'
 
 export function SocialProve() {
   return (
@@ -29,20 +36,11 @@ export function SocialProve() {
             <SocialProveSpan>sobre a LFAG</SocialProveSpan>
           </SocialProveH1>
         </RevealWrapper>
-        <div className="mx-auto max-w-3xl px-4 py-4 sm:px-6">
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-4 xl:justify-center">
-            <Image
-              src={ImageGoogle}
-              alt="Imagem"
-              width={300}
-              height={300}
-              rel="preload"
-              className="h-28 w-28 drop-shadow-lg"
-            />
-          </div>
-        </div>
-        <div className="mx-auto max-w-lg px-4 pt-8 sm:px-6">
-          {/* <Swiper
+        <SocialCardImgGoogle>
+          <ImgGoogle />
+        </SocialCardImgGoogle>
+
+        {/* <Swiper
           navigation={true}
           autoplay={{
             delay: 2200,
@@ -130,30 +128,23 @@ export function SocialProve() {
             </blockquote>
           </SwiperSlide>
         </Swiper> */}
-          <div className="block overflow-hidden rounded-lg">
-            <Image
-              alt="Img"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              src={Client1}
-              className="h-full w-full object-cover sm:h-80 lg:h-auto"
-            />
-
-            <div className="rounded-b-sm border-2 border-white/30 bg-white/20 p-4 shadow-sm shadow-black/30 backdrop-blur-lg">
-              <p className="text-xs font-bold uppercase tracking-widest text-brandGreyBlue900">
-                VForte | Engenharia e Controle Ambiental
-              </p>
-              <p className="pt-2 text-xl font-bold text-brandGreyBlue sm:text-2xl">
-                Viviane Oliveira
-              </p>
-              <p className="pt-1 text-sm text-brandGreyBlue900">
-                Amando a consultoria da Aurely! Uma profissional muito
-                competente e sabe exatamente o que está fazendo pelos 20 anos de
-                experiência. Acabei aconomizando muito pelos próximos 10 anos de
-                empresas. Minha enorme Gratidão por toda sua entrega.
-              </p>
-            </div>
-          </div>
-        </div>
+        <SocialCardImgClient>
+          <ImgClient />
+          <SocialCardProperty>
+            <SocialCardParagraphTitle>
+              VForte | Engenharia e Controle Ambiental
+            </SocialCardParagraphTitle>
+            <SocialCardParagraphSubtitle>
+              Viviane Oliveira
+            </SocialCardParagraphSubtitle>
+            <SocialCardParagraphContent>
+              Amando a consultoria da Aurely! Uma profissional muito competente
+              e sabe exatamente o que está fazendo pelos 20 anos de experiência.
+              Acabei aconomizando muito pelos próximos 10 anos de empresas.
+              Minha enorme Gratidão por toda sua entrega.
+            </SocialCardParagraphContent>
+          </SocialCardProperty>
+        </SocialCardImgClient>
       </SocialProveSpace>
     </>
   )

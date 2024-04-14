@@ -28,7 +28,7 @@ export function BenefitsSection(props: BenefitsSectionProps) {
 type BenefitsSpaceProps = ComponentProps<'section'>
 
 export function BenefitsSpace(props: BenefitsSpaceProps) {
-  return <section className="py-10" {...props} />
+  return <section className="px-2 py-10" {...props} />
 }
 
 type BenefitsH1Props = ComponentProps<'h1'>

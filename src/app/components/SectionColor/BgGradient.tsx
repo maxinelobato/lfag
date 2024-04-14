@@ -10,7 +10,7 @@ export function BgGradientColor(props: BgGradientColorProps) {
   return (
     <>
       <div
-        className="min-h-full bg-gradient-to-br from-brandOrange to-white bg-scroll"
+        className="min-h-full bg-gradient-to-br from-brandOrange to-white"
         {...props}
       />
     </>

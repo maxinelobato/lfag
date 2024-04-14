@@ -7,7 +7,6 @@ import {
   ButtonHomeText,
 } from '../Buttons/ButtonCta'
 import { IconWtp } from '../Icons/IconWtp'
-import ImageAurely from '../../../../public/img/aurely-img.png'
 import {
   AboutDivButton,
   AboutH1,
@@ -15,9 +14,10 @@ import {
   AboutProperty,
   AboutSection,
   AboutSpan,
+  AboutSpanH1,
 } from './AboutComponents'
 import { RevealWrapper } from 'next-reveal'
-import Image from 'next/image'
+import { ImgAurely } from './ImgAurely'
 
 export function About() {
   return (
@@ -25,7 +25,10 @@ export function About() {
       <AboutSection>
         <AboutProperty>
           <RevealWrapper reset={true}>
-            <AboutH1>Conheça à LFAG da Especialista Aurely Feitoza</AboutH1>
+            <AboutH1>
+              Conheça à LFAG da{' '}
+              <AboutSpanH1>Especialista Aurely Feitoza</AboutSpanH1>
+            </AboutH1>
             <AboutSpan>CREA 135798D</AboutSpan>
           </RevealWrapper>
           <RevealWrapper reset={true}>
@@ -56,15 +59,7 @@ export function About() {
             </ButtonHome>
           </AboutDivButton>
         </AboutProperty>
-        <Image
-          alt="Imagem"
-          src={ImageAurely}
-          loading="lazy"
-          sizes='"(max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw"'
-          className="object-auto h-fit w-full"
-        />
+        <ImgAurely />
       </AboutSection>
     </>
   )
