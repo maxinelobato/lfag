@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 // import { Swiper, SwiperSlide } from 'swiper/react'
 // import './swiper.css'
@@ -15,7 +15,6 @@ import {
   SocialProveSpan,
 } from './SocialProveComponents'
 import { RevealWrapper } from 'next-reveal'
-import { ImgGoogle } from './ImgGoogle'
 import {
   SocialCardImgClient,
   SocialCardImgGoogle,
@@ -24,7 +23,7 @@ import {
   SocialCardParagraphTitle,
   SocialCardProperty,
 } from './SocialCardComponents'
-import { ImgClient } from './ImgClient'
+import { ImgGoogle, ImgVForte } from '../Image'
 
 export function SocialProve() {
   return (
@@ -128,23 +127,33 @@ export function SocialProve() {
             </blockquote>
           </SwiperSlide>
         </Swiper> */}
-        <SocialCardImgClient>
-          <ImgClient />
-          <SocialCardProperty>
-            <SocialCardParagraphTitle>
-              VForte | Engenharia e Controle Ambiental
-            </SocialCardParagraphTitle>
-            <SocialCardParagraphSubtitle>
-              Viviane Oliveira
-            </SocialCardParagraphSubtitle>
-            <SocialCardParagraphContent>
-              Amando a consultoria da Aurely! Uma profissional muito competente
-              e sabe exatamente o que está fazendo pelos 20 anos de experiência.
-              Acabei aconomizando muito pelos próximos 10 anos de empresas.
-              Minha enorme Gratidão por toda sua entrega.
-            </SocialCardParagraphContent>
-          </SocialCardProperty>
-        </SocialCardImgClient>
+        <RevealWrapper
+          rotate={{ x: 0, y: 0, z: 0 }}
+          origin="left"
+          distance="500px"
+          reset={true}
+          desktop={true}
+          mobile={true}
+          viewOffset={{ top: 0, right: 0, bottom: 0, left: 0 }}
+        >
+          <SocialCardImgClient>
+            <ImgVForte />
+            <SocialCardProperty>
+              <SocialCardParagraphTitle>
+                VForte | Engenharia e Controle Ambiental
+              </SocialCardParagraphTitle>
+              <SocialCardParagraphSubtitle>
+                Viviane Oliveira
+              </SocialCardParagraphSubtitle>
+              <SocialCardParagraphContent>
+                Amando a consultoria da Aurely! Uma profissional muito
+                competente e sabe exatamente o que está fazendo pelos 20 anos de
+                experiência. Acabei aconomizando muito pelos próximos 10 anos de
+                empresas. Minha enorme Gratidão por toda sua entrega.
+              </SocialCardParagraphContent>
+            </SocialCardProperty>
+          </SocialCardImgClient>
+        </RevealWrapper>
       </SocialProveSpace>
     </>
   )
