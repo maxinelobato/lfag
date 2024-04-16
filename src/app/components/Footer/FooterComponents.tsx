@@ -229,3 +229,41 @@ export function FooterPoliticsPropertyParagraph(
     </>
   )
 }
+
+type FooterButtonPropertyProps = ComponentProps<'div'>
+
+export function FooterButtonProperty(props: FooterButtonPropertyProps) {
+  return (
+    <div className="flex w-auto justify-center sm:justify-start" {...props} />
+  )
+}
+
+type FooterButtonAnchorProps = ComponentProps<'a'>
+
+export function FooterButtonAnchor(props: FooterButtonAnchorProps) {
+  return (
+    <a
+      target="_blank"
+      aria-label="Clique no botão"
+      className="focus:shadow-outline inline-flex h-10 w-full items-center justify-center rounded-md bg-transparent px-4 py-6 font-medium tracking-wide text-white shadow-lg hover:bg-brandOrange/10 hover:transition-colors focus:outline-none sm:h-10 md:w-auto"
+      {...props}
+    />
+  )
+}
+
+type FooterButtonFlexProps = ComponentProps<'div'>
+
+export function FooterButtonFlex(props: FooterButtonFlexProps) {
+  return <div className="flex items-center" {...props} />
+}
+
+type FooterButtonTextProps = ComponentProps<'div'>
+
+export function FooterButtonText(props: FooterButtonTextProps) {
+  return (
+    <div
+      className="mr-3 font-semibold text-white sm:text-wrap sm:text-xs"
+      {...props}
+    />
+  )
+}

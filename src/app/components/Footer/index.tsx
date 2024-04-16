@@ -1,17 +1,23 @@
 'use client'
 
-import { InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
-import { LogoLFagAzul } from '../Logo/LogoLFagAzul'
+import {
+  At,
+  InstagramLogo,
+  LinkedinLogo,
+  MapPin,
+  WhatsappLogo,
+} from '@phosphor-icons/react'
 import {
   FooterAllRights,
-  FooterAnchorEmail,
   FooterAnchorSocialMidia,
-  FooterAnchorWhatsapp,
+  FooterButtonAnchor,
+  FooterButtonFlex,
+  FooterButtonProperty,
+  FooterButtonText,
   FooterCols,
   FooterDiv,
   FooterFlex,
   FooterFlexItensCenter,
-  FooterLabelCity,
   FooterLabelContact,
   FooterParagraphContact,
   FooterPoliticsProperty,
@@ -22,6 +28,8 @@ import {
   FooterSpanLogo,
   FooterSpanSocialMidia,
 } from './FooterComponents'
+import { LogoLfagFooter } from '../Image'
+import { IconWtpFooter } from '../Icons/IconWtpFooter'
 
 export function Footer() {
   return (
@@ -29,26 +37,49 @@ export function Footer() {
       <FooterProperty>
         <FooterRows>
           <FooterCols>
-            <LogoLFagAzul />
+            <LogoLfagFooter />
             <FooterSpanLogo>Segurança do Trabalho e Ergonomia</FooterSpanLogo>
           </FooterCols>
           <FooterSpace>
             <FooterParagraphContact>Entre em Contato</FooterParagraphContact>
             <FooterFlex>
-              <FooterLabelContact>Whastsapp:</FooterLabelContact>
-              <FooterAnchorWhatsapp href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
-                +55 94 99265-9199
-              </FooterAnchorWhatsapp>
+              <FooterButtonProperty>
+                <FooterButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
+                  <FooterButtonFlex>
+                    <FooterButtonText>
+                      <FooterLabelContact>Celular:</FooterLabelContact>
+                      (94)99265-9199
+                    </FooterButtonText>
+                    <IconWtpFooter icon={WhatsappLogo} />
+                  </FooterButtonFlex>
+                </FooterButtonAnchor>
+              </FooterButtonProperty>
             </FooterFlex>
             <FooterFlex>
-              <FooterLabelContact>Email:</FooterLabelContact>
-              <FooterAnchorEmail href="mailto:lfagsst@gmail.com">
-                lfagsst@gmail.com
-              </FooterAnchorEmail>
+              <FooterButtonProperty>
+                <FooterButtonAnchor href="mailto:lfagsst@gmail.com">
+                  <FooterButtonFlex>
+                    <FooterButtonText>
+                      <FooterLabelContact>Email:</FooterLabelContact>
+                      lfagsst@gmail.com
+                    </FooterButtonText>
+                    <IconWtpFooter icon={At} />
+                  </FooterButtonFlex>
+                </FooterButtonAnchor>
+              </FooterButtonProperty>
             </FooterFlex>
             <FooterFlex>
-              <FooterLabelContact>Endereço:</FooterLabelContact>
-              <FooterLabelCity>Parauapebas/PA</FooterLabelCity>
+              <FooterButtonProperty>
+                <FooterButtonAnchor href="https://maps.app.goo.gl/k3zDfuPESt36ntiPA">
+                  <FooterButtonFlex>
+                    <FooterButtonText>
+                      <FooterLabelContact>Endereço:</FooterLabelContact>
+                      Parauapebas/PA
+                    </FooterButtonText>
+                    <IconWtpFooter icon={MapPin} />
+                  </FooterButtonFlex>
+                </FooterButtonAnchor>
+              </FooterButtonProperty>
             </FooterFlex>
           </FooterSpace>
           <FooterDiv>

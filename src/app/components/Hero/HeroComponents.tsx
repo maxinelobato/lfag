@@ -21,3 +21,15 @@ export function HeroSectionProperty(props: HeroSectionPropertyProps) {
     </div>
   )
 }
+
+type HeroImageProps = ComponentProps<'div'>
+
+export function HeroImage(props: HeroImageProps) {
+  return (
+    <div className="z-40 mx-auto max-w-5xl">
+      <div className="z-40 flex justify-center sm:flex-none sm:justify-start">
+        <div className="z-40 -mt-10 block pb-8" {...props} />
+      </div>
+    </div>
+  )
+}

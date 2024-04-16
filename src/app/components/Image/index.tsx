@@ -1,10 +1,42 @@
 import Image from 'next/image'
+import LogoLfag from '../../../../public/img/lfag1.png'
 import mrv from '../../../../public/img/mrn-logo.svg'
 import anglo from '../../../../public/img/anglo-american-logo-white.svg'
 import direcional from '../../../../public/img/direcional-logo.webp'
 import elo from '../../../../public/img/grupoelo-logo.png'
 import ImageGoogle from '../../../../public/img/google.png'
 import ImgVforte from '../../../../public/img/client1.jpg'
+
+export function LogoLfagHero() {
+  return (
+    <>
+      <Image
+        width={100}
+        height={100}
+        loading="lazy"
+        rel="preload"
+        src={LogoLfag}
+        alt="Logo"
+      />
+    </>
+  )
+}
+
+export function LogoLfagFooter() {
+  return (
+    <>
+      <Image
+        className="drop-shadow-md"
+        width={80}
+        height={80}
+        loading="lazy"
+        rel="preload"
+        src={LogoLfag}
+        alt="Logo"
+      />
+    </>
+  )
+}
 
 export function ImgGoogle() {
   return (

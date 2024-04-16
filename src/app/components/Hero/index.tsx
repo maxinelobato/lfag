@@ -8,11 +8,15 @@ import {
 } from '../Buttons/ButtonCta'
 import { HeadingH1, HeadingParagraph, HeadingSpan } from '../Heading/Heading'
 import { IconWtp } from '../Icons/IconWtp'
-import { HeroSectionProperty, HeroSectionRoot } from './HeroComponents'
-import { LogoLFAG } from '../Logo/LogoLFAG'
+import {
+  HeroImage,
+  HeroSectionProperty,
+  HeroSectionRoot,
+} from './HeroComponents'
 import { StarRating } from '../Icons/StarRating'
 import { RevealWrapper } from 'next-reveal'
 import { HeroSectionBgImg } from './HeroSectionBgImg'
+import { LogoLfagHero } from '../Image'
 
 export function Hero() {
   return (
@@ -20,7 +24,9 @@ export function Hero() {
       <HeroSectionRoot>
         <HeroSectionBgImg />
         <HeroSectionProperty>
-          <LogoLFAG />
+          <HeroImage>
+            <LogoLfagHero />
+          </HeroImage>
           <RevealWrapper reset={true}>
             <HeadingH1>
               Proteja sua empresa evitando multas e{' '}
