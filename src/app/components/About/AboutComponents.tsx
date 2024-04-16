@@ -22,7 +22,7 @@ type AboutPropertyProps = ComponentProps<'div'>
 export function AboutProperty(props: AboutPropertyProps) {
   return (
     <>
-      <div className="p-8 md:p-12 lg:px-8 lg:py-24">
+      <div className="p-6 md:p-12 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-xl text-center sm:text-left" {...props} />
       </div>
     </>

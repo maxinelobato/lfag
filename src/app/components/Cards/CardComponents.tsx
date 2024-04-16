@@ -144,5 +144,10 @@ export function CardButtonFlex(props: CardButtonFlexProps) {
 type CardButtonTextProps = ComponentProps<'div'>
 
 export function CardButtonText(props: CardButtonTextProps) {
-  return <div className="mr-3 font-semibold text-white" {...props} />
+  return (
+    <div
+      className="mr-3 text-wrap text-center text-sm font-semibold uppercase leading-tight text-white"
+      {...props}
+    />
+  )
 }

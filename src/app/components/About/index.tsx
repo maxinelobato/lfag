@@ -51,7 +51,7 @@ export function About() {
           <AboutDivButton>
             <ButtonHome href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <ButtonHomeText>
-                Garanta a Segurança de sua Empresa
+                quero a segurança da minha empresa
               </ButtonHomeText>
               <ButtonHomeFlex>
                 <IconWtp icon={WhatsappLogo} />

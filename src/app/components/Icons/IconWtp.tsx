@@ -5,5 +5,5 @@ export interface IconWtpProps {
 }
 
 export function IconWtp({ icon: Icon }: IconWtpProps) {
-  return <Icon className="h-6 w-6" weight="fill" />
+  return <Icon className="h-8 w-8 sm:h-6 sm:w-6" weight="fill" />
 }

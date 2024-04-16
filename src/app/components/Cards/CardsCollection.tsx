@@ -11,7 +11,7 @@ import {
   PlusCircle,
 } from '@phosphor-icons/react'
 import { IconCard } from '../Icons/IconCard'
-import { IconWtp } from '../Icons/IconWtp'
+import { IconCardWtp } from '../Icons/IconCardWtp'
 import {
   CardGridBg,
   CardGrid,
@@ -69,7 +69,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -94,7 +94,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -119,7 +119,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -144,7 +144,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -169,7 +169,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -194,7 +194,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -219,7 +219,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
@@ -244,7 +244,7 @@ export function CardsCollection() {
             <CardButtonAnchor href="https://api.whatsapp.com/send?phone=94992659199&text=Ol%C3%A1%2C%20Aurely!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20na%20minha%20Empresa.%20Podemos%20conversar%3F%20">
               <CardButtonFlex>
                 <CardButtonText>Saiba mais</CardButtonText>
-                <IconWtp icon={WhatsappLogo} />
+                <IconCardWtp icon={WhatsappLogo} />
               </CardButtonFlex>
             </CardButtonAnchor>
           </CardButtonProperty>
