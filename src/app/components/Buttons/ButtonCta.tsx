@@ -30,7 +30,7 @@ type ButtonHomeTextProps = ComponentProps<'div'>
 export function ButtonHomeText(props: ButtonHomeTextProps) {
   return (
     <div
-      className="mr-3 text-wrap text-center text-sm font-semibold uppercase leading-tight text-white group-hover:text-zinc-800 sm:text-left sm:text-lg"
+      className="mr-3 text-wrap text-center text-sm font-bold uppercase leading-tight text-white group-hover:text-zinc-800 sm:text-left sm:text-lg"
       {...props}
     />
   )
