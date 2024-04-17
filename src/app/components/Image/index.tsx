@@ -6,6 +6,24 @@ import direcional from '../../../../public/img/direcional-logo.webp'
 import elo from '../../../../public/img/grupoelo-logo.png'
 import ImageGoogle from '../../../../public/img/google.png'
 import ImgVforte from '../../../../public/img/client1.jpg'
+import ImageAurely from '../../../../public/img/aurely-img.png'
+
+export function ImgAurely() {
+  return (
+    <>
+      <Image
+        alt="Imagem"
+        src={ImageAurely}
+        loading="lazy"
+        rel="preload"
+        sizes='"(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"'
+        className="object-auto h-auto w-full"
+      />
+    </>
+  )
+}
 
 export function LogoLfagHero() {
   return (

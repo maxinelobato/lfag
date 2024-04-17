@@ -103,44 +103,6 @@ export function FooterLabelContact(props: FooterLabelContactProps) {
   )
 }
 
-type FooterAnchorWhatsappProps = ComponentProps<'a'>
-
-export function FooterAnchorWhatsapp(props: FooterAnchorWhatsappProps) {
-  return (
-    <>
-      <a
-        aria-label="Fale conosco no whatsapp"
-        className="text-white transition-colors duration-300 hover:text-brandOrange200"
-        {...props}
-      />
-    </>
-  )
-}
-
-type FooterAnchorEmailProps = ComponentProps<'a'>
-
-export function FooterAnchorEmail(props: FooterAnchorEmailProps) {
-  return (
-    <>
-      <a
-        aria-label="Fale conosco no Email"
-        className="text-white transition-colors duration-300 hover:text-brandOrange200"
-        {...props}
-      />
-    </>
-  )
-}
-
-type FooterLabelCityProps = ComponentProps<'div'>
-
-export function FooterLabelCity(props: FooterLabelCityProps) {
-  return (
-    <>
-      <div className="text-white" {...props} />
-    </>
-  )
-}
-
 type FooterDivProps = ComponentProps<'div'>
 
 export function FooterDiv(props: FooterDivProps) {

@@ -17,7 +17,7 @@ import {
   AboutSpanH1,
 } from './AboutComponents'
 import { RevealWrapper } from 'next-reveal'
-import { ImgAurely } from './ImgAurely'
+import { ImgAurely } from '../Image'
 
 export function About() {
   return (

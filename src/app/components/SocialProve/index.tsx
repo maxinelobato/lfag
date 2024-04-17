@@ -38,7 +38,6 @@ export function SocialProve() {
         <SocialCardImgGoogle>
           <ImgGoogle />
         </SocialCardImgGoogle>
-
         {/* <Swiper
           navigation={true}
           autoplay={{
