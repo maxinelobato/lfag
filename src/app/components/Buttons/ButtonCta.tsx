@@ -12,7 +12,7 @@ export function ButtonHome(props: ButtonHomeProps) {
       <a
         target="_blank"
         aria-label="Clique no botão"
-        className="focus:shadow-outline z-40 inline-flex h-14 w-full items-center justify-center rounded-full bg-brandWts px-8 font-medium text-white shadow-sm shadow-black/30 delay-0 duration-150 ease-in-out hover:scale-105 hover:bg-green-800 hover:transition-all focus:outline-none sm:h-14 md:w-auto"
+        className="focus:shadow-outline z-40 inline-flex h-14 w-full items-center justify-center rounded-full bg-brandWts px-8 font-medium text-white shadow-sm shadow-black/30 delay-0 duration-150 ease-in-out hover:scale-105 hover:bg-brandWts/80 hover:transition-all focus:outline-none sm:h-14 md:w-auto"
         {...props}
       />
     </div>
@@ -41,7 +41,7 @@ type ButtonFloatProps = ComponentProps<'a'>
 export function ButtonFloat(props: ButtonFloatProps) {
   return (
     <div className="fixed bottom-4 right-4 z-[100] flex h-24 w-24 items-end justify-end p-2 hover:-translate-x-0 hover:scale-110 hover:transition-all hover:duration-300">
-      <div className="absolute z-50 flex items-center justify-center rounded-full bg-brandWts p-4 text-white shadow-sm shadow-black/30 hover:bg-green-800 hover:transition-all focus:outline-none">
+      <div className="absolute z-50 flex items-center justify-center rounded-full bg-brandWts p-4 text-white shadow-sm shadow-black/30 hover:bg-brandWts/80 hover:transition-all focus:outline-none">
         <a
           className="decoration-transparent"
           target="_blank"

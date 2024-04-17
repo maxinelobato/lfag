@@ -129,7 +129,7 @@ export function CardButtonAnchor(props: CardButtonAnchorProps) {
     <a
       target="_blank"
       aria-label="Clique no botão"
-      className="focus:shadow-outline inline-flex h-10 w-full items-center justify-center rounded-full bg-green-600 px-6 font-medium tracking-wide text-white shadow-md hover:bg-brandWts hover:transition-all focus:outline-none sm:h-10 md:w-auto"
+      className="focus:shadow-outline inline-flex h-10 w-full items-center justify-center rounded-full bg-brandWts px-6 font-medium tracking-wide text-white shadow-md hover:bg-brandWts/80 hover:transition-colors focus:outline-none sm:h-10 md:w-auto"
       {...props}
     />
   )

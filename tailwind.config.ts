@@ -9,7 +9,7 @@ const config: Config = {
         brandGreyBlue900: '#102D53',
         brandOrange: '#F68713',
         brandOrange200: '#FAB975',
-        brandWts: '#16A34A',
+        brandWts: '#006400',
       },
     },
   },
