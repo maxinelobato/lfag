@@ -11,6 +11,9 @@ const config: Config = {
         brandOrange200: '#FAB975',
         brandWts: '#006400',
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
     },
   },
   plugins: [],
