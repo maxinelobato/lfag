@@ -12,6 +12,5 @@ const nextConfig = {
     // loader: 'cloudinary',
     // path: 'https://res.cloudinary.com/dibhc6pw4/image/upload/v1712887924/lfag-client',
   },
-  unstable_runtimeJS: false,
 }
 export default nextConfig
