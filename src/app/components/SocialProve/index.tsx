@@ -18,7 +18,6 @@ import { RevealWrapper } from 'next-reveal'
 import {
   SocialCardImgClient,
   SocialCardImgGoogle,
-  SocialCardParagraphContent,
   SocialCardParagraphSubtitle,
   SocialCardParagraphTitle,
   SocialCardProperty,
@@ -144,12 +143,12 @@ export function SocialProve() {
               <SocialCardParagraphSubtitle>
                 Viviane Oliveira
               </SocialCardParagraphSubtitle>
-              <SocialCardParagraphContent>
+              {/* <SocialCardParagraphContent>
                 Amando a consultoria da Aurely! Uma profissional muito
                 competente e sabe exatamente o que está fazendo pelos 20 anos de
                 experiência. Acabei aconomizando muito pelos próximos 10 anos de
                 empresas. Minha enorme Gratidão por toda sua entrega.
-              </SocialCardParagraphContent>
+              </SocialCardParagraphContent> */}
             </SocialCardProperty>
           </SocialCardImgClient>
         </RevealWrapper>

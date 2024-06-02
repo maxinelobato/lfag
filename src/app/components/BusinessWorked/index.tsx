@@ -19,7 +19,7 @@ export function BusinessWorked() {
         <RevealWrapper reset={true}>
           <BusinessWorkedProperty>
             <BusinessWorkedH1>
-              Quais são as empresas que a LFAG já trabalhou?
+              As empresas que fazem parte da trajetória da LFAG
             </BusinessWorkedH1>
             <BusinessWorkedParagraph>
               Empresas multinacionais e brasileiras altamente sustentáveis. Com
