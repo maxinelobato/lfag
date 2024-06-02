@@ -30,8 +30,8 @@ export function SocialProve() {
       <SocialProveSpace>
         <RevealWrapper reset={true}>
           <SocialProveH1>
-            O que os clientes falam {''}
-            <SocialProveSpan>sobre a LFAG</SocialProveSpan>
+            A LFAG lida de forma amistosa e com {''}
+            <SocialProveSpan>cuidado genuíno com os clientes</SocialProveSpan>
           </SocialProveH1>
         </RevealWrapper>
         <SocialCardImgGoogle>
